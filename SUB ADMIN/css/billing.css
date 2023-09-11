@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500&family=Audiowide&family=Oswald:wght@200;300;400;500&display=swap');
+.container-fluid{
+	font-family: 'Archivo', sans-serif;
+	font-style:'Noto Sans Korean';
+	/*background-color: #FFF1F1;*/
+}
+body{
+	padding: 0%;
+	margin: 0%;
+}
+.m-heading{
+	color: #EF35B0;
+}
+.body-data{
+	font-family: 'Archivo', sans-serif;
+	font-style:'Noto Sans Korean';
+}
+/* .rows{
+	border:1px black solid;
+	border-radius: 15px;
+	padding-top: 12px;
+	text-align: center;
+} */
+.inp{
+	width:60%;
+	text-align: center;	
+}
+
+.qty-inp{
+	width:80%;
+	text-align: center;
+}
+.btns{
+	padding:7px;
+	background-color: #EF35B0;
+	color:white;
+	border-radius: 8px;
+	border-color:#EF35B0;
+
+}

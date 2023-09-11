@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../css/Checkout.css" type="text/css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col">
+					<h2 class="m-heading">Billing</h2>
+				</div>
+			</div>
+			<div>
+				<!--Customer Details-->
+				<div class="container">
+					<div class="row mt-3">
+						<!--Customer info -->
+						<div class="col-lg-7 col-md-7 col-sm-8 col-xs-12">
+							<div class="row">
+								<div class="col ">
+									<h5>Customer Name</h5>
+								</div>
+								<div class="col">
+									<input type="text" class="form-control"  placeholder="Enter Customer Name">
+								</div>
+							</div>
+							<div class="row mt-2">
+								<div class="col ">
+									<h5>Phone Number</h5>
+								</div>
+								<div class="col ">
+									<input type="text" class="form-control"  placeholder="Enter Phone Number">
+								</div>
+							</div>
+							<div class="row mt-2">
+								<div class="col ">
+									<h5>Email Id</h5>
+								</div>
+								<div class="col ">
+									<input type="email" class="form-control"  placeholder="Enter Mail ID">
+								</div>
+							</div>
+							<div class="row mt-2 ">
+								<div class="col  col-md-6 col-sm-6 col-xs-6">
+									<h5 >Gender</h5>
+								</div>
+								<div class="col  ">
+									<!-- <div class="dropdown">
+										<button class=" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Gender
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="#">Male</a>
+										<a class="dropdown-item" href="#">Female</a>
+										</div>
+									</div> -->
+									<select name="Gender" class="form-select p-1" aria-label="Default select example" style="border-radius: 5px;">
+										
+										<option value="Male">Male</option>
+										<option value="Female">Female</option>
+										
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-8 col-xs-12 order-sum ml-3 mb-3">
+							<div class="container ">
+								<div >
+									<h4 class="row order-sum-heading">Order Summary</h4>
+								</div>
+								<div class="row mt-3 ">
+									<div class="col ">
+										<h6 style='font-size:20px'>Items</h6>
+									</div>
+									<div class="col text-right">
+										<h6 style='font-size:20px'>04</h6>
+									</div>
+								</div>
+								<div class="row mt-2 ">
+									<div class="col">
+										<h6 style='font-size:20px'>Total</h6>
+									</div>
+									<div class="col text-right">
+										<h6 style='font-size:20px'>Rs.504</h6>
+									</div>
+								</div>
+								<div class="text-center">
+									<a href="receipt.html"><button class="pay-done mt-3 px-2" >Payment Done</button></a>
+								</div>
+								
+							</div>	
+						</div>
+						
+						
+					</div>
+				</div>
+				<!--Mode Of Payment-->
+				<div class="container ">
+					<div class="row">
+						<div class="col">
+							<div class="row">
+								<div class="col">
+									<h1 class="sub-heading">Mode Of Payment</h1>
+								</div>
+							</div>
+							<!--Checkboxes-->
+							<div class="row mt-2">
+								<div class="col-5">
+									<div class="checkbox">
+										<div class="row">
+											<!--<div  class="col-3 mb-3">
+												<label><input type="checkbox" name="cash "> Cash</label>
+											</div>-->
+											<div class="col mb-3">
+												<!-- <div class="dropdown">
+													<button class=" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Cash
+													</button>
+													<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+													<a class="dropdown-item" href="#">Full Payment</a>
+													<a class="dropdown-item" href="#">Partial Payment</a>
+													</div>
+												</div> -->
+												<div class="row">
+													<div class="col-lg-3">
+														<label class="">Cash</label>
+													</div>
+													<div class="col">
+														<select name="Cash" class="form-select p-1" aria-label="Default select example" style="border-radius: 5px;">
+															<optgroup label="Cash">
+															<option value="Full Payment">Full Payment</option>
+															<option value="Partial Payment">Partial Payment</option>
+														</select>
+													</div>	
+												</div>
+												
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-lg-3">
+												<label><input type="checkbox" name="UPI "> UPI </label>
+												
+											</div>
+											<div class="col ">
+												<label><input type="text" class=" form-control" name="UPI " placeholder="9123416253"> </label>
+												<div class=" row ml-5 ">
+													<div class="col ">
+														<button class="btns px-3">Send Link</button>
+													</div>
+													
+												</div>
+												
+											</div>
+											
+										</div>
+										
+										<div class="row mt-1">
+											<div class="col">
+												<label><input type="checkbox" name="Card "> Debit/Credit Card </label>
+											</div>
+										</div>
+										
+										<div class="row mt-1">
+											<div class="col-8">
+												<label><input type="checkbox" name="QR Scan "> QR Scan</label>
+											</div>
+											
+										</div>
+										
+										
+									</div>
+								</div>
+						
+								<div class="col-1 my-2">
+									
+									<img class="QR" src="../images/QR_Scan.png" alt="QR Scan">
+									
+									
+								</div>
+								<!--Alert-->
+								<div class=" col failed text-center d-flex flex-row">
+									<div class="col-1 my-4 ">
+									
+										<img  class='alert' src="../images/Alert.png" alt="alert">
+										
+									</div>
+									<div class="col my-5">
+										<h5>QR Failed!</h5>
+									</div>
+								</div>
+								<!---->
+								
+							</div>
+							
+							
+						</div>
+						
+					</div>
+				</div>
+					
+				<!--Another Mode Of Payment-->
+				<div class="container ">
+					<div class="row ">
+						<div class="col">
+							<div class="row">
+								<div class="col">
+									<h1 class="sub-heading">Another Mode Of Payment</h1>
+								</div>
+							</div>
+							<div class="row mt-2">
+								<div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+									<label><input type="checkbox" name="Khata"> Khata </label>
+									
+								</div>
+								<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 mb-2">
+									<label> Balance Amount</label>
+								</div>
+								<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-2">
+									<input type="text" name="balance_amt" placeholder="Rs.23,000 ">
+								</div>
+								<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+									<label>Recent Amount</label>
+								</div>
+								<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+									<input type="text" name="Recent_amt " placeholder="Rs.3,000 "> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col mt-4 mb-2 text-center">
+					<button class="btns px-2">Payment Cancel</button>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>

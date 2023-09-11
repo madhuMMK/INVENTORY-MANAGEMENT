@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/Product INP.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBn+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container-fluid main" style="font-family: NOto Sans Korean;">
+		<div class="row">
+			<div class=" col d-flex flex-row justify-content-start">
+				<a href="../html/productinput.html"><img src="../images/240_F_308334444_a03jdKtCxp1RbqvMQsz6zdaCNTTxhaK7-removebg-preview.png" style="margin-top: 13px; width:70px;"></a>
+				<h3 class="h">Edit Product</h3>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<label for="Title" class="lbl">Enter Name</label>
+					<input type="text" id="Title" name="Title" placeholder="Levis  T-shirt"  class="inp1 form form-control mrg " style="border-radius: 20px;">
+				</div>
+				<div class="col-3">
+					<label for="Title" class="lbl">Quantity</label>
+                        	<input type="number" id="Title" name="Title" placeholder="200"  class="inp1 form form-control " style="border-radius: 20px;">
+				</div>
+				<div class="col-3">
+					<label for="Title" class="lbl">Price</label>
+                        		<input type="number" id="Title" name="Title" placeholder="300"  class="inp1 form form-control " style="border-radius: 20px;">
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-6">
+					<label for="Category" class="lbl ">Shop</label>
+					<input type="text" id="Title" name="Title" placeholder="Shop"  class="inp1 form form-control cd" style="border-radius: 20px;">
+				</div>
+				<div class="col-3">
+					<label for="Title" class="lbl">Input Date</label><br>
+					<input type="date" id="Title" name="Title" placeholder="200"  class="inp1 form form-control " style= "margin-right: 150px; border-radius: 20px;">
+				</div>
+				<div class="col-3">
+					<label for="Title" class="lbl">Exp</label><br>
+					<input type="month" id="Title" name="Title" placeholder="200"  class="inp1 form form-control " style="margin-right: 150px; border-radius: 20px;">
+				</div>
+			</div>
+
+			<div class="row mt-3">
+				<div class='col-6'>
+					<label for="Category" class="lbl ">Category</label><br>
+					<select name="category" id="Categories" class="inp1 form form-control cd" style="border-radius: 20px;">
+						<optgroup label="Categories">
+						<option value="clothes">Clothes</option>
+						<option value="Cosmetics">Cosmetics</option>
+						<option value="Motors">MOtors</option>
+						<option value="Grocery">Grocery</option>
+						</optgroup>
+					</select>
+				</div>
+				<div class="col-6">
+					<label for="Title" class="lbl">Sub Category</label><br>
+					<select name="Status" id="status" class="inp1 form form-control " style="margin-right: 150px; border-radius: 20px;">
+						<optgroup label="Status">
+						>
+						<option value="Active">Shirt</option>
+						<option value="Inactive">Jeans</option>
+						<option value="Inactive">T-shirt</option>
+						</optgroup>
+					</select>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-6">
+					<label for="Title" class="lbl">Status</label>
+					<select name="Status" id="status" class="inp1 form form-control" style="border-radius: 20px;">
+						<optgroup label="Status">
+						<option value="Active">Inctive</option>
+						<option value="Inactive">Active</option>
+						</optgroup>
+					</select>
+				</div>
+				<div class="col-6">
+					<label for="Title" class="lbl">Specifications</label>
+                   			 <input type="text" id="Title" name="Title" placeholder="specs"  class="inp1 form form-control" style="border-radius: 20px;">
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-6">
+					<label for="Title" class="lbl">Features</label><br>
+					<input type="text" id="Title" name="Title" placeholder="features"  class="inp1 form form-control" style="border-radius: 20px;">
+				</div>
+				<div class="col-6">
+					<label for="Image" class="lbl">Upload Image</label><br>
+                   			 <input type="file" id="image" name="Image" style="color: black;">
+				</div>
+			</div>
+			<div class="bt">
+				<button class="b">Edit</button>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+ </body>
+</html>

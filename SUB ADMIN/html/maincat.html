@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/maincat.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Sans+KR:wght@100&family=Overpass:wght@100;700&family=Padauk&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@220;300;400;500&family=Audiowide&family=Oswald:wght@220;300;400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+      let menuicn = document.querySelector(".menuicn");
+      let nav = document.querySelector(".navcontainer");
+
+      menuicn.addEventListener("click",()=>
+      {
+          nav.classList.toggle("navclose");
+      })
+    </script>
+    
+</head>
+<body style="background-color: #FFF1F1; font-family: Noto Sans Korean; font-style: normal;">
+    <div>
+        <h2 class="h " style="font-family: Noto Sans Korean;font-style: normal;font-weight: bolder; color: #EF35B0;margin-left: 10px;margin-top: 10px;">Main Category</h2>
+        <a href="Create C.html"><button class="tn px-3" style="font-family: Noto Sans Korean; font-style: normal; box-shadow: 1px 1px 5px #785C6F;">Create Category</button></a>
+    </div>
+   <div style="text-align: right; margin-right: 10px;"><a href="viewall C.html"><button class="px-3" style="font-family: Noto Sans Korean; font-style: normal   ; border: none; background-color: #FFFFFF; border-radius: 50px; box-shadow: 1px 1px 5px #785C6F;">View All</button></a></div>
+   <div class="main">
+      <br>
+   <div class="box-container ">
+      <div class="box box1" style="background-color: white;">
+         <img src="../images/tshirt.png">
+      </div>
+
+      <div class="box box2" style="background-color: white;">
+         <img src="../images/tshirt.png">				
+      </div>
+
+      <div class="box box3" style="background-color: white;">
+         <img src="../images/tshirt.png">
+      </div>
+
+          <div class="box box4" style="background-color: white;">
+         <img src="../images/tshirt.png">
+      </div>
+   </div>
+   <div class="row">
+      <div class="col"><p style="text-align: center;">TShirts</p></div>
+      <div class="col"><p style="text-align: center;">TShirts</p></div>
+      <div class="col"><p style="text-align: center;">TShirts</p></div>
+      <div class="col"><p style="text-align: center;">TShirts</p></div>       
+   </div>
+   <br>
+   <div class='container-fluid mrt' style="margin-bottom: 10px;" >
+
+      <div class="row" style="text-align: center;background-color:rgba(211, 198, 198, 1);  border-radius:220px; margin-left: 10px; margin-right:10px; padding-top:5px; padding-bottom:5px; font-size:17px;font-family: Noto Sans Korean;font-style:normal;color:#EF35B0;font-weight: bold;">
+         <div class="table-column" style="font-weight: bold; text-align: center; padding-top: 0px;">S.No</div>
+         <div class="table-column" style="font-weight: bold; text-align: center; padding-top: 0px;">Category Name</div>
+         <div class="table-column" style="font-weight: bold; text-align: center; padding-top: 0px;">Status</div>
+         <div class="table-column" style="font-weight: bold; text-align: center; padding-top: 0px;">Action</div>
+      </div>
+
+      <div class="row" style="text-align: center;  background-color:#FFFFFF; border-radius: 100px; margin-left: 5px; margin-right: 5px; margin-top: 5px;">
+         <div class="table-column"></div>
+         <div class="table-column"><form><input type="search" name="search" placeholder="Search.." style="text-align: center; border-radius: 100px;"></form></div>
+        <div>
+         <select name="Status" id="status" class="inp1 form form-control" style=" border-radius: 40px; margin-left: 95px;margin-top:5px;width: fit-content;">
+              <option value="Active">Active</option>
+              <option value="Inactive">Inactive</option>
+          </select>
+         </div>
+         <div class="table-column"></div>
+      </div>
+
+      <div class="row" style="text-align: center;  background-color:#FFFFFF; border-radius: 100px; margin-left: 10px; margin-right: 10px; margin-top: 5px;">
+         <div class="table-column" style="text-align: center; padding-top: 0px;">1</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;">Clothes</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;">Active</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;"><a href="Edit C.html"><i class="fa fa-edit" style="color: black;"></i></a></div></div>
+      </div>
+
+      <div class="row" style="text-align: center;  background-color:#FFFFFF; border-radius: 100px; margin-left: 22px; margin-right: 22px; margin-top: 5px;">
+         <div class="table-column" style="text-align: center; padding-top: 0px;">2</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;">Clothes</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;">Active</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;"><a href="Edit C.html"><i class="fa fa-edit" style="color: black;"></i></a></div></div>
+      </div>
+      
+      <div class="row" style="text-align: center;  background-color:#FFFFFF; border-radius: 100px; margin-left: 22px; margin-right: 22px; margin-top: 5px;">
+         <div class="table-column" style="text-align: center; padding-top: 0px;">3</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;">Clothes</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;">Active</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;"><a href="Edit C.html"><i class="fa fa-edit" style="color: black;"></i></a></div></div>
+      </div>
+
+      <div class="row" style="text-align: center;  background-color:#FFFFFF; border-radius: 100px; margin-left: 22px; margin-right: 22px; margin-top: 5px;">
+         <div class="table-column" style="text-align: center; padding-top: 0px;">4</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;">Clothes</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;">Active</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;"><a href="Edit C.html"><i class="fa fa-edit" style="color: black;"></i></a></div></div>
+      </div>
+
+      <div class="row" style="text-align: center;  background-color:#FFFFFF; border-radius: 100px; margin-left: 22px; margin-right: 22px; margin-top: 5px;">
+         <div class="table-column" style="text-align: center; padding-top: 0px;">5</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;">Clothes</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;">Active</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;"><a href="Edit C.html"><i class="fa fa-edit" style="color: black;"></i></a></div></div>
+      </div>
+
+      <div class="row" style="text-align: center;  background-color:#FFFFFF; border-radius: 100px; margin-left: 22px; margin-right: 22px; margin-top: 5px;">
+         <div class="table-column" style="text-align: center; padding-top: 0px;">6</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;">Clothes</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;">Active</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;"><a href="Edit C.html"><i class="fa fa-edit" style="color: black;"></i></a></div></div>
+      </div>
+
+      <div class="row" style="text-align: center;  background-color:#FFFFFF; border-radius: 100px; margin-left: 22px; margin-right: 22px; margin-top: 5px;">
+         <div class="table-column" style="text-align: center; padding-top: 0px;">7</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;">Clothes</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;">Active</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;"><a href="Edit C.html"><i class="fa fa-edit" style="color: black;"></i></a></div></div>
+      </div>
+
+      <div class="row" style="text-align: center;  background-color:#FFFFFF; border-radius: 100px; margin-left: 22px; margin-right: 22px; margin-top: 5px;">
+         <div class="table-column" style="text-align: center; padding-top: 0px;">8</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;">Clothes</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;">Active</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;"><a href="Edit C.html"><i class="fa fa-edit" style="color: black;"></i></a></div></div>
+      </div>
+
+      <div class="row" style="text-align: center;  background-color:#FFFFFF; border-radius: 100px; margin-left: 22px; margin-right: 22px; margin-top: 5px;">
+         <div class="table-column" style="text-align: center; padding-top: 0px;">9</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;">Clothes</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;">Active</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;"><a href="Edit C.html"><i class="fa fa-edit" style="color: black;"></i></a></div></div>
+      </div>
+
+      <div class="row" style="text-align: center;  background-color:#FFFFFF; border-radius: 100px; margin-left: 22px; margin-right: 22px; margin-top: 5px;">
+         <div class="table-column" style="text-align: center; padding-top: 0px;">10</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;">Clothes</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;">Active</div>
+         <div class="table-column" style="text-align: center; padding-top: 0px;"><a href="Edit C.html"><i class="fa fa-edit" style="color: black;"></i></a></div>
+      </div>
+   </div>   
+</body>
+</html>

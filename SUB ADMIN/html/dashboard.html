@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/dashboard.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+	<body>
+    <script>
+        let menuicn = document.querySelector(".menuicn");
+        let nav = document.querySelector(".navcontainer");
+
+        menuicn.addEventListener("click",()=>
+        {
+            nav.classList.toggle("navclose");
+        })
+    </script>
+    
+</head>
+
+<body style="background-color: #FFF1F1;">
+		<div class="main">
+			<div class="box-container">
+				<!-- <div class="box box1" style="background-color: white;">
+					
+						<div  >
+						<p class="topic-heading text" style=" text-align: left;  color: #EF35B0; font-weight: bold; font-family: Lora; font-style: normal; margin-top: 70px;">Total Customers<br></p>
+						<div class="d-flex flex-row justify-content-center" style=" margin-bottom: 10px;">
+						<p class=" topic-heading text" style="padding-right: 40px; font-weight: bold;  font-family: Lora; font-style: normal; margin-top: 50px;">123 </p>
+						<img src="../images/1.png" style="height: 100px; width: 130px; margin-bottom: 30px;"/>
+						
+						</div>
+						</div>
+						
+				</div> -->
+				<div class="row box box2" style="background-color: white;">
+						<div class="col">
+							<div class="row">
+									<div class="col">
+											<h5 style="color: #EF35b0;font-size:20px;font-family: Lora;font-style: normal;font-weight:bold;">Total Customers</h5>
+									</div>
+							</div>
+							<div class="row">
+								<div class="col">
+										<h5 style="font-family: Lora;font-style: normal;font-weight: bold;" class="mt-5">123</h5>
+								</div>
+								<div class="col">
+									<img src="../images/1.png" style="height: 100px; width: 130px; margin-bottom: 30px;"/>
+							</div>
+						</div>
+						</div>
+				</div >
+				<div class="row box box2" style="background-color: white;">
+					<div class="col">
+						<div class="row">
+								<div class="col">
+										<h5 style="color: #EF35b0;font-size:20px;font-family: Lora;font-style: normal;font-weight:bold;">No.of Products</h5>
+								</div>
+						</div>
+						<div class="row">
+							<div class="col">
+									<h5 style="font-family: Lora;font-style: normal;font-weight: bold;" class="mt-5">120</h5>
+							</div>
+							<div class="col">
+								<img src="../images/2.png" style="height: 120px; width: 130px; margin-bottom: 30px;"/>
+						</div>
+					</div>
+					</div>
+			</div >
+
+				
+
+			<div class="row box box2" style="background-color: white;">
+				<div class="col">
+					<div class="row">
+							<div class="col">
+									<h5 style="color: #EF35b0;font-size:20px;font-family: Lora;font-style: normal;font-weight:bold;">Return Customers</h5>
+							</div>
+					</div>
+					<div class="row">
+						<div class="col">
+								<h5 style="font-family: Lora;font-style: normal;font-weight: bold;" class="mt-5">90</h5>
+						</div>
+						<div class="col">
+							<img src="../images/4.png" style="height: 90px; width: 130px; margin-bottom: 30px;"/>
+					</div>
+				</div>
+				</div>
+		</div >
+
+			</div>
+			<br>
+			<br>
+			<div class="box-container" >
+				<div class="row box box2" style="background-color: white;">
+					<div class="col">
+						<div class="row">
+								<div class="col">
+										<h5 style="color: #EF35b0;font-size:20px;font-family: Lora;font-style: normal;font-weight:bold;">Khata Amount</h5>
+								</div>
+						</div>
+						<div class="row" style=>
+							<div class="col" style="margin-bottom: 20px;">
+									<h5 style="font-family: Lora;font-style: normal;font-weight: bold;" class="mt-2">45,678</h5>
+									<button style="margin-top:10px;background-color:#cba4a4;color:white;font-weight:bold; border-width: 0px;padding:4px 10px;border-radius:12px;font-family: Lora;font-style:normal;">check</button>
+							</div>
+							<div class="col">
+								<img src="../images/3.png" style="height: 100px; width: 100px; margin-bottom: 30px;"/>
+						</div>
+					</div>
+					</div>
+			</div >
+
+			<div class="row box box2" style="background-color: white;">
+				<div class="col">
+					<div class="row">
+							<div class="col">
+									<h5 style="color: #EF35b0;font-size:20px;font-family: Lora;font-style: normal;font-weight:bold;">Expiry Alerts</h5>
+							</div>
+					</div>
+					<div class="row" style=>
+						<div class="col" style="margin-bottom: 20px;">
+								<h5 style="font-family: Lora;font-style: normal;font-weight: bold;" class="mt-2">4</h5>
+								<button  style="margin-top:10px;background-color:#cba4a4;color:white;font-weight:bold; border-width: 0px;padding:4px 10px;border-radius:12px;font-family: Lora;font-style:normal;">check</button>
+						</div>
+						<div class="col">
+							<img src="../images/3.png" style="height: 100px; width: 100px; margin-bottom: 30px;"/>
+					</div>
+				</div>
+				</div>
+		</div >
+
+		<div class="row box box2" style="background-color: white;">
+			<div class="col">
+				<div class="row">
+						<div class="col">
+								<h5 style="color: #EF35b0;font-size:20px;font-family: Lora;font-style: normal;font-weight:bold;">Revenue Earned</h5>
+						</div>
+				</div>
+				<div class="row" style=>
+					<div class="col" style="margin-bottom: 20px;">
+							<h5 style="font-family: Lora;font-style: normal;font-weight: bold;" class="mt-2">45,678</h5>
+							<button  style="margin-top:10px;background-color:#cba4a4;color:white;font-weight:bold; border-width: 0px;padding:4px 10px;border-radius:12px;font-family: Lora;font-style:normal;">check</button>
+					</div>
+					<div class="col">
+						<img src="../images/5.png" style="height: 90px; width: 95px; margin-bottom: 30px;"/>
+				</div>
+			</div>
+			</div>
+	</div >
+			</div>
+		</div>
+
+		<div class="container-fluid mt-3">
+			<div class="row">
+				<div class="col-sm-6">
+					<h4 style="font-family: Lora;font-style: normal;font-weight: bold;text-align: center;font-size: 30px;" class="topic-heading">Sales</h4>
+					<canvas id="mybar"></canvas>
+					<script>
+					var xValues = ["foods", "vegetables", "cosmetics", "dairy", "liquids"];
+					var yValues = [55, 49, 44, 24, 15];
+					var barColors = ["red", "green","blue","orange","brown"];
+
+					new Chart("mybar", {
+					type: "bar",
+					data: {
+						labels: xValues,
+						datasets: [{
+						backgroundColor: barColors,
+						data: yValues
+						}]
+					},
+					options: {
+						legend: {display: false},
+						title: {
+						display: true,
+						}
+					}
+					});
+					</script>
+				</div>
+				<div class="col-sm-6">
+					<h4 style="font-family: Lora;font-style: normal;font-weight: bold;text-align: center;font-size: 30px;" class="topic-heading" class="topic-heading">Orders</h4>
+					<canvas id="myline"></canvas>
+					<script>
+					var xValues = [50,60,70,80,90,100,110,120,130,140,150];
+					var yValues = [7,8,8,9,9,9,10,11,14,14,15];
+
+					new Chart("myline", {
+					type: "line",
+					data: {
+						labels: xValues,
+						datasets: [{
+						fill: false,
+						lineTension: 0,
+						backgroundColor: "rgba(0,0,255,1.0)",
+						borderColor: "rgba(0,0,255,0.1)",
+						data: yValues
+						}]
+					},
+					options: {
+						legend: {display: false},
+						scales: {
+						yAxes: [{ticks: {min: 6, max:16}}],
+						}
+					}
+					});
+					</script>
+				</div>
+			</div>
+		</div>
+<br><br>
+		<!-- <p class="topic" style="text-align: center;font-family: Lora;font-style:normal;font-weight: bold;">Designed and Developed by</p>
+        <p class="topic-heading" style="text-align: center;font-family: Lora;font-style:normal;font-weight: bold">SRIGANUGA SERVICE PRIVATE LIMITED</p> -->
+
+	</body>
+</html>

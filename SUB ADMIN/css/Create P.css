@@ -1,0 +1,54 @@
+.main {
+    background-color: #FFF1F1;
+    height: 110vh;
+   
+}
+.h {
+    padding: 30px;
+    color: #EF35B0;
+    font-family: Noto Sans KR;
+    font-weight: bold;
+}
+.in-div {
+    background-color: #FFE1E1;
+    border-radius: 50px;
+    padding: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px;
+    
+}
+.frm {
+    margin-left: 20px;
+}
+.inp1 {
+    width: 800px;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+}
+.lbl {
+    color: #EF35B0;
+    font-weight: bold;
+    
+}
+.bt {
+    text-align: center;
+    padding-top: 30px;
+}
+.b {
+    background-color: white;
+    color: green;
+    font-family: Noto sans KR;
+    border: none;
+    border-radius: 30px;
+    width: 100px;
+    font-weight: bold;
+}
+
+.lp {
+    margin-left: 20px;
+    text-decoration: underline;
+    font-family: Noto Sans KR;
+}
+    

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Sans+KR:wght@100&family=Overpass:wght@100;700&family=Padauk&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/remainder.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@170;300;400;500&family=Audiowide&family=Oswald:wght@170;300;400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+        <div class="container-fluid" style="font-family: NOto Sans Korean;">   
+           <div class="row">
+              <div class=" col-lg-12 col-sm-4 col-md-4" ><h2 style="font-weight: bold; font-family: Noto Sans Korean; color: #EF35B0; margin-top: 20px; margin-bottom: 0px;">Remainders</h2></div>
+           </div>   <br>
+           <div class="row">
+                <div class="col-sm-4 col-md-2">
+                    <form>
+                        <label for="select" class="lbl" style="margin-top: 20px;"></label><br>
+                        <select name="" id="" class="inp1 form form-control" style="border-radius: 50px;" onchange="location=this.value;">
+                        <optgroup label="select">
+                            <option value="none">Select</option>
+                            <option value="productsort.html">Products</option>
+                            <option value="khatasort.html">Khata</option>
+                        </optgroup>
+                        </select> 
+                        </form>   
+                </div>
+                <div class="col-sm-4 col-md-2">
+                    <form style="margin-top: 20px;">
+                        <label for="Title">From</label><br> 
+                     <input type="Date" id="Title" name="Title" style="margin-bottom: 10px; border-radius: 50px;"><br>
+                    </form>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                    <form style="margin-top: 20px;">
+                        <label for="Title">To</label><br>
+                     <input type="Date" id="Title" name="Title" style="margin-bottom: 10px; border-radius: 50px;"><br>
+                    </form>
+                </div>
+
+           </div>
+        </div>
+
+        <div class="container-fluid" style="font-family: NOto Sans Korean; margin-left: 0; margin-right: 0;">   
+            <div class="row pro_ip_bg" style="color: #EF35B0; text-align: center;background-color:rgba(211, 198, 198, 1);  border-radius:200px; margin-left: 10px; margin-right:10px; padding-top:5px; padding-bottom:5px;"">
+               <div class="col-sm-1 col-md-1" >S.No</div>
+               <div class="col-sm-1 col-md-2" >Name</div>
+               <div class="col-sm-1 col-md-2" >Date <a href="#"><i class="fa fa-calendar"style="color:black;"></i></a></div>
+               <div class="col-sm-1 col-md-1" >Exp</div>
+               <div class="col-sm-2 col-md-1" >Quantity</div>
+               <div class="col-sm-2 col-md-1" >Rem Quantity</div>
+               <div class="col-sm-1 col-md-1" >n/price</div>
+               <div class="col-sm-1 col-md-1" >Remainder</div>
+               <div class="col-sm-1 col-md-2" >Status</div>
+            </div>
+         
+            <div class="row pro_ip_bg"style="text-align: center;">
+            <div class="c2ol-sm-1 col-md-1" style="font-weight: bold; margin-top: 10px;">Search</div>
+            <div class="col-sm-1 col-md-2" ><form><input type="search" name="search" placeholder="Search.." style="text-align: center;"></form></div>
+            <div class="col-sm-1 col-md-2" ><form><input type="date" name="search" placeholder="Search.." style="text-align: center;border-radius: 50px;border-width:0.01px;padding:6px;height: 40px;"></form></div>
+            <div class="col-sm-2 col-md-1" ></div>
+            <div class="col-sm-2 col-md-1" ></div>
+            <div class="col-sm-2 col-md-1" ></div>
+            <div class="col-sm-1 col-md-1" ></div>
+            <div class="col-sm-1 col-md-1" ></div>
+            <div class="col-sm-1 col-md-2" ></div>
+            </div>
+            <!--Row 1-->
+            <div class="row pro_ip_bg" style="text-align: center; margin-top: 5px;">
+               <div class="col-sm-1 col-md-1" scope="row" >1</div>
+               <div class="col-sm-1 col-md-2" >Adidas t-shirt</div>
+               <div class="col-sm-1 col-md-2" >12-02-23</div>
+               <div class="col-sm-1 col-md-1" >10-23</div>
+               <div class="col-sm-2 col-md-1" >50</div>
+               <div class="col-sm-2 col-md-1" >10</div>
+               <div class="col-sm-1 col-md-1" >100.00</div>
+               <div class="col-sm-1 col-md-1" >50</div>
+               <div class="col-sm-1 col-md-2" >pending
+            </div>
+            </div>
+         
+         
+            <div class="row pro_ip_bg" style="text-align: center; margin-top: 5px;">
+               <div class="col-sm-1 col-md-1" scope="row" >2</div>
+               <div class="col-sm-1 col-md-2" >Adidas t-shirt</div>
+               <div class="col-sm-1 col-md-2" >12-02-23</div>
+               <div class="col-sm-1 col-md-1" >10-23</div>
+               <div class="col-sm-2 col-md-1" >50</div>
+               <div class="col-sm-2 col-md-1" >10</div>
+               <div class="col-sm-1 col-md-1" >100.00</div>
+               <div class="col-sm-1 col-md-1" >50</div>
+               <div class="col-sm-1 col-md-2" >pending
+            </div>
+            </div>
+         
+         
+            <div class="row pro_ip_bg" style="text-align: center; margin-top: 5px;">
+               <div class="col-sm-1 col-md-1" scope="row" >3</div>
+               <div class="col-sm-1 col-md-2" >Adidas t-shirt</div>
+               <div class="col-sm-1 col-md-2" >12-02-23</div>
+               <div class="col-sm-1 col-md-1" >10-23</div>
+               <div class="col-sm-2 col-md-1" >50</div>
+               <div class="col-sm-2 col-md-1" >10</div>
+               <div class="col-sm-1 col-md-1" >100.00</div>
+               <div class="col-sm-1 col-md-1" >50</div>
+               <div class="col-sm-1 col-md-2" >pending</div>
+            </div>
+         
+         
+            <div class="row pro_ip_bg" style="text-align: center; margin-top: 5px;">
+               <div class="col-sm-1 col-md-1" scope="row" >4</div>
+               <div class="col-sm-1 col-md-2" >Adidas t-shirt</div>
+               <div class="col-sm-1 col-md-2" >12-02-23</div>
+               <div class="col-sm-1 col-md-1" >10-23</div>
+               <div class="col-sm-2 col-md-1" >50</div>
+               <div class="col-sm-2 col-md-1" >10</div>
+               <div class="col-sm-1 col-md-1" >100.00</div>
+               <div class="col-sm-1 col-md-1" >50</div>
+               <div class="col-sm-1 col-md-2" >pending</div>
+            </div>
+         
+            <div class="row pro_ip_bg" style="text-align: center; margin-top: 5px;">
+               <div class="col-sm-1 col-md-1" scope="row" >5</div>
+               <div class="col-sm-1 col-md-2" >Adidas t-shirt</div>
+               <div class="col-sm-1 col-md-2" >12-02-23</div>
+               <div class="col-sm-1 col-md-1" >10-23</div>
+               <div class="col-sm-2 col-md-1" >50</div>
+               <div class="col-sm-2 col-md-1" >10</div>
+               <div class="col-sm-1 col-md-1" >100.00</div>
+               <div class="col-sm-1 col-md-1" >50</div>
+               <div class="col-sm-1 col-md-2" >pending</div>
+            </div>
+         
+            <div class="row pro_ip_bg" style="text-align: center; margin-top: 5px;">
+               <div class="col-sm-1 col-md-1" scope="row" >6</div>
+               <div class="col-sm-1 col-md-2" >Adidas t-shirt</div>
+               <div class="col-sm-1 col-md-2" >12-02-23</div>
+               <div class="col-sm-1 col-md-1" >10-23</div>
+               <div class="col-sm-2 col-md-1" >50</div>
+               <div class="col-sm-2 col-md-1" >10</div>
+               <div class="col-sm-1 col-md-1" >100.00</div>
+               <div class="col-sm-1 col-md-1" >50</div>
+               <div class="col-sm-1 col-md-2" >pending</div>
+            </div>
+         
+            <div class="row pro_ip_bg" style="text-align: center; margin-top: 5px;">
+               <div class="col-sm-1 col-md-1" scope="row" >7</div>
+               <div class="col-sm-1 col-md-2" >Adidas t-shirt</div>
+               <div class="col-sm-1 col-md-2" >12-02-23</div>
+               <div class="col-sm-1 col-md-1" >10-23</div>
+               <div class="col-sm-2 col-md-1" >50</div>
+               <div class="col-sm-2 col-md-1" >10</div>
+               <div class="col-sm-1 col-md-1" >100.00</div>
+               <div class="col-sm-1 col-md-1" >50</div>
+               <div class="col-sm-1 col-md-2" >pending</div>
+            </div>
+         
+            <div class="row pro_ip_bg" style="text-align: center; margin-top: 5px;">
+               <div class="col-sm-1 col-md-1" scope="row" >8</div>
+               <div class="col-sm-1 col-md-2" >Adidas t-shirt</div>
+               <div class="col-sm-1 col-md-2" >12-02-23</div>
+               <div class="col-sm-1 col-md-1" >10-23</div>
+               <div class="col-sm-2 col-md-1" >50</div>
+               <div class="col-sm-2 col-md-1" >10</div>
+               <div class="col-sm-1 col-md-1" >100.00</div>
+               <div class="col-sm-1 col-md-1" >50</div>
+               <div class="col-sm-1 col-md-2" >pending</div>
+            </div>
+         
+            <div class="row pro_ip_bg" style="text-align: center; margin-top: 5px;">
+               <div class="col-sm-1 col-md-1" scope="row" >9</div>
+               <div class="col-sm-1 col-md-2" >Adidas t-shirt</div>
+               <div class="col-sm-1 col-md-2" >12-02-23</div>
+               <div class="col-sm-1 col-md-1" >10-23</div>
+               <div class="col-sm-2 col-md-1" >50</div>
+               <div class="col-sm-2 col-md-1" >10</div>
+               <div class="col-sm-1 col-md-1" >100.00</div>
+               <div class="col-sm-1 col-md-1" >50</div>
+               <div class="col-sm-1 col-md-2" >pending</div>
+            </div>
+         
+            <div class="row pro_ip_bg" style="text-align: center; margin-top: 5px;">
+               <div class="col-sm-1 col-md-1" scope="row" >10</div>
+               <div class="col-sm-1 col-md-2" >Adidas t-shirt</div>
+               <div class="col-sm-1 col-md-2" >12-02-23</div>
+               <div class="col-sm-1 col-md-1" >10-23</div>
+               <div class="col-sm-2 col-md-1" >50</div>
+               <div class="col-sm-2 col-md-1" >10</div>
+               <div class="col-sm-1 col-md-1" >100.00</div>
+               <div class="col-sm-1 col-md-1" >50</div>
+               <div class="col-sm-1 col-md-2" >pending</div>
+            </div>
+         
+         </div>
+</body>
+</html>
