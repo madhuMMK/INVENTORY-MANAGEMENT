@@ -1,0 +1,26 @@
+.main {
+	background-color: #FFF1F1;
+	height: 100vh;
+    }
+    .h2 {
+	margin: 10px;
+	margin-top: 20px;
+	margin-left: 20px;
+	color: #EF35B0;
+	font-family: Noto Sans KR;
+    }
+    .title {
+	color: #EF35B0;
+	margin-left: 40px;
+	margin-top: 15px;
+	font-family: Noto Sans KR;
+    }
+    .b {
+	background-color: white;
+	font-family: Noto sans KR;
+	border: none;
+	border-radius: 30px;
+	box-shadow: 0px 0px 10px;
+	width: 100px;
+	font-weight: bold;
+    }
