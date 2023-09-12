@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/create coupon.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBn+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container-fluid main">
+		<div class="row">
+			<div class="col ">
+				<div class="d-flex flex-row justify-content-start">
+				<a href="../html/coupons.html"><img src="../images/240_F_308334444_a03jdKtCxp1RbqvMQsz6zdaCNTTxhaK7-removebg-preview.png" style="margin-top: 13px; width:70px;"></a>
+				<h2 class="h">Create Coupon</h2>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<label for="Title" class="lbl">Coupon Name</label>
+					<input type="text" id="Title" name="Title" placeholder="Enter coupon Name here"  class="inp1 form form-control mrg ">
+				</div>
+				<div class="col-6">
+					<label for="Title" class="lbl">Coupon Number</label>
+                        	<input type="text" id="Title" name="Title" placeholder="1234"  class="inp1 form form-control ">
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-6">
+					<label for="Category" class="lbl ">Validity</label>
+					<input type="date" id="Title" name="Title" class="inp1 form form-control cd">
+				</div>
+				<div class="col-6">
+					<label for="Title" class="lbl">Type</label><br>
+					<select name="Status" id="status" class="inp1 form form-control">
+                        <optgroup label="Sub Categories">
+                          <option value="Select">Select<option>
+                          <option value="Jeans">Public</option>
+                          <option value="Shirt">Private</option>
+                        </optgroup>
+                      </select><br> 
+				</div>
+			</div>
+
+			<div class="row mt-3">
+				<div class="col-6">
+					<label for="Title" class="lbl">Total No of uses</label><br>
+					<input type="text" id="Title" name="Title" placeholder="54"  class="inp1 form form-control " style="margin-right: 150px;">
+				</div>
+				<div class="col-6">
+					<label for="Title" class="lbl">Maximum discount</label><br>
+					<input type="text" id="Title" name="Title" placeholder="1345"  class="inp1 form form-control " style="margin-right: 150px;">
+				</div>
+			</div>
+
+			<div class="row mt-3">
+				<div class='col-6'>
+					<label for="Title" class="lbl">MinimumPurchase value</label><br>
+					<input type="text" id="Title" name="Title" placeholder="Enter Address"  class="inp1 form form-control h-100" style="margin-right: 150px;">
+				</div>
+            </div>
+			<br><br>
+			<div class="row mt-3">
+				<div class="col text-center">
+					<button class="b">Create</button>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+ </body>
+</html>

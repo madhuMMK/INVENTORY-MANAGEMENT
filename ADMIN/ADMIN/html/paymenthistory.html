@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Sans+KR:wght@100&family=Overpass:wght@100;700&family=Padauk&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/paymenthistory.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500&family=Audiowide&family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+<div class="container-fluid" style="font-family: Noto Sans Korean;">   
+  <div class="row">
+    <div class="col-lg-6" ><h2 style="font-family: Noto Sans Korean; color: #EF35B0; font-weight: bold;">Payment History</h2></div>
+    <div class="col-sm-4 col-md-2" ></div>
+    <div class="col-sm-4 col-md-2" ></div>  
+    <div class="col-sm-4 col-md-2" ></div>
+  </div> <br>
+</div>
+<div class="container-fluid" style="font-family: Noto Sans Korean;">   
+    <div class="row">
+         <div class="col-sm-2 col-md-2 col-lg-2">
+             <form>
+                 <label for="Admins" class="lbl" style="margin-top: 20px;">Admins</label><br>
+                       <select name="Admins" id="Admins" class="inp1 form form-control" style="border-radius: 50px;">
+                          <optgroup label="select">
+                            <option value="none">Select</option>
+                            <option value="Admin 1">Admin 1</option>
+                            <option value="Admin 2">Admin 2</option>
+                            <option value="Admin 3">Admin 3</option>
+                            <option value="Admin 4">Admin 4</option>
+                          </optgroup>
+                        </select>
+                 </form>
+         </div>
+         <div class="col-sm-2 col-md-2 col-lg-2">
+             <form style="margin-top: 20px;">
+                 <label for="Title">From</label><br> 
+              <input type="Date" id="Title" name="Title" class="inp1 form form-control" style="border-radius: 50px;"><br>
+             </form>
+         </div>
+         <div class="col-sm-2 col-md-2 col-lg-2">
+             <form style="margin-top: 20px;">
+                 <label for="Title">To</label><br>
+              <input type="Date" id="Title" name="Title" class="inp1 form form-control" style="border-radius: 50px;"><br>
+             </form>
+         </div>
+         <div class="col-sm-2 col-md-2 col-lg-2">
+             <form>
+                 <label for="Shops" class="lbl" style="margin-top: 20px;">Shops</label><br>
+                 <select name="Shops" id="Shops" class="inp1 form form-control" style="border-radius: 50px;">
+                    <optgroup label="select">
+                      <option value="none">Select</option>
+                      <option value="Shop 1">Shop 1</option>
+                      <option value="Shop 2">Shop 2</option>
+                      <option value="Shop 3">Shop 3</option>
+                      <option value="Shop 4">Shop 4</option>
+                    </optgroup>
+                  </select> 
+                 </form>  
+         </div>
+         <div class="col-sm-2 col-md-4 col-lg-1">
+            <div class="button">
+                <button class="btn" style="margin-top: 30px; box-shadow: 0px 0px 10px; border-radius:10px; width: 100px;">Export<i class="fa fa-share-square-o icon"></i></button>                                                                               
+            </div>
+            </div>
+    </div>
+</div>
+<div class="container-fluid" style="font-family: Noto Sans Korean;">   
+  <div class="row" style=" color: #EF35B0; font-weight: bold; text-align: center;background-color:rgba(211, 198, 198, 1);  border-radius:200px; margin-left: 10px; margin-right:10px; padding-top:5px; padding-bottom:5px;">
+   <div class="col-sm-4 col-md-1" >S.No</div>
+   <div class="col-sm-4 col-md-2" >Invoice ID</div>
+   <div class="col-sm-4 col-md-2" >Invoice Date</div>
+   <div class="col-sm-4 col-md-2" >Amount</div>
+   <div class="col-sm-4 col-md-2" >Mode of payment</div>
+   <div class="col-sm-4 col-md-2" >Status</div>
+   <div class="col-sm-4 col-md-1" >Actions</div>
+</div>
+ <div class="row payment-bg" style="text-align: center; font-weight:bold; margin-top: 5px;">
+   <div class="col-sm-4 col-md-1" style="font-weight: bold; margin-top: 10px;">Search</div>
+   <div class="col-sm-4 col-md-2" ><form><input type="search" name="search" placeholder="Search.." style="text-align: center;margin-top:5px;"></form></div>
+   <div class="col-sm-4 col-md-2" ><form><input type="date" name="search" placeholder="Search.." style="text-align: center;border-radius: 50px; margin-top:5px; border-width:0.1px; padding:6px; width: 120px; height: 40px;"></form></div>
+   <div class="col-sm-4 col-md-2" ><form><input type="search" name="search" placeholder="Search.." style="text-align: center;margin-top:5px;"></form></div>
+   <div class="col-sm-4 col-md-2" ><form>
+      <select name="Status" id="status" class="inp1 form form-control" style="border-radius: 40px; margin-left:20px;margin-top:5px;width: fit-content; width: 90px; height: 40px;">
+         <option value="none">select</option>
+         <option value="BHIM UPI">BHIM UPI</option>
+         <option value="CASH">CASH</option>
+         <option value="CARD">CARD</option>
+         <option value="KHATA">KHATA</option>
+         </select>
+   </form></div>
+   <div class="col-sm-4 col-md-2" ><form> 
+      <select name="Status" id="status" class="inp1 form form-control" style="border-radius: 40px; margin-left:35px;margin-top:5px;width: fit-content; width: 90px; height: 40px;">
+      <option value="none">select</option>
+      <option value="Active">Active</option>
+      <option value="Inactive">Inactive</option>
+      </select></form>
+   </div>
+    
+ </div>
+ <div class="row payment-bg" style="text-align: center; margin-top: 5px;">
+    <div class="col-sm-4 col-md-1" scope="row" >1</div>
+    <div class="col-sm-4 col-md-2" >00261</div>
+    <div class="col-sm-4 col-md-2" >12-02-23</div>
+    <div class="col-sm-4 col-md-2" >150.00</div>
+    <div class="col-sm-4 col-md-2" >BHIM UPI</div>
+    <div class="col-sm-4 col-md-2" >Done</div>
+    <div class="col-sm-4 col-md-1" ><a href="../html/payment history invoice.html"><i class="fa fa-eye" style="color:black;margin-right: 2px;"></i></a><a href="#"><i class="fa fa-download" style="color:black;margin-left: 2px;"></i></a></div>
+ </div>
+ <div class="row payment-bg" style="text-align: center; margin-top: 5px;">
+    <div class="col-sm-4 col-md-1" scope="row" >2</div>
+    <div class="col-sm-4 col-md-2" >00262</div>
+    <div class="col-sm-4 col-md-2" >12-02-23</div>
+    <div class="col-sm-4 col-md-2" >150.00</div>
+    <div class="col-sm-4 col-md-2" >BHIM UPI</div>
+    <div class="col-sm-4 col-md-2" >Done</div>
+    <div class="col-sm-4 col-md-1" ><a href="../html/payment history invoice.html"><i class="fa fa-eye" style="color:black;margin-right: 2px;"></i></a><a href="#"><i class="fa fa-download" style="color:black;margin-left: 2px;"></i></a></div>
+ </div>
+ <div class="row payment-bg" style="text-align: center; margin-top: 5px;">
+    <div class="col-sm-4 col-md-1" scope="row" >3</div>
+    <div class="col-sm-4 col-md-2" >00263</div>
+    <div class="col-sm-4 col-md-2" >12-02-23</div>
+    <div class="col-sm-4 col-md-2" >150.00</div>
+    <div class="col-sm-4 col-md-2" >BHIM UPI</div>
+    <div class="col-sm-4 col-md-2" >Done</div>
+    <div class="col-sm-4 col-md-1" ><a href="../html/payment history invoice.html"><i class="fa fa-eye" style="color:black;margin-right: 2px;"></i></a><a href="#"><i class="fa fa-download" style="color:black;margin-left: 2px;"></i></a></div>
+ </div>
+ <div class="row payment-bg" style="text-align: center; margin-top: 5px;">
+    <div class="col-sm-4 col-md-1" scope="row" >4</div>
+    <div class="col-sm-4 col-md-2" >00264</div>
+    <div class="col-sm-4 col-md-2" >12-02-23</div>
+    <div class="col-sm-4 col-md-2" >150.00</div>
+    <div class="col-sm-4 col-md-2" >BHIM UPI</div>
+    <div class="col-sm-4 col-md-2" >Done</div>
+    <div class="col-sm-4 col-md-1" ><a href="../html/payment history invoice.html"><i class="fa fa-eye" style="color:black;margin-right: 2px;"></i></a><a href="#"><i class="fa fa-download" style="color:black;margin-left: 2px;"></i></a></div>
+ </div>
+ <div class="row payment-bg" style="text-align: center; margin-top: 5px;">
+    <div class="col-sm-4 col-md-1" scope="row" >5</div>
+    <div class="col-sm-4 col-md-2" >00265</div>
+    <div class="col-sm-4 col-md-2" >12-02-23</div>
+    <div class="col-sm-4 col-md-2" >150.00</div>
+    <div class="col-sm-4 col-md-2" >BHIM UPI</div>
+    <div class="col-sm-4 col-md-2" >Cancelled</div>
+    <div class="col-sm-4 col-md-1" ><a href="../html/payment history invoice.html"><i class="fa fa-eye" style="color:black;margin-right: 2px;"></i></a><a href="#"><i class="fa fa-download" style="color:black;margin-left: 2px;"></i></a></div>
+ </div>
+ <div class="row payment-bg" style="text-align: center; margin-top: 5px;">
+    <div class="col-sm-4 col-md-1" scope="row" >6</div>
+    <div class="col-sm-4 col-md-2" >00266</div>
+    <div class="col-sm-4 col-md-2" >12-02-23</div>
+    <div class="col-sm-4 col-md-2" >150.00</div>
+    <div class="col-sm-4 col-md-2" >BHIM UPI</div>
+    <div class="col-sm-4 col-md-2" >Cancelled</div>
+    <div class="col-sm-4 col-md-1" ><a href="../html/payment history invoice.html"><i class="fa fa-eye" style="color:black;margin-right: 2px;"></i></a><a href="#"><i class="fa fa-download" style="color:black;margin-left: 2px;"></i></a></div>
+ </div>
+ <div class="row payment-bg" style="text-align: center; margin-top: 5px;">
+    <div class="col-sm-4 col-md-1" scope="row" >7</div>
+    <div class="col-sm-4 col-md-2" >00267</div>
+    <div class="col-sm-4 col-md-2" >12-02-23</div>
+    <div class="col-sm-4 col-md-2" >150.00</div>
+    <div class="col-sm-4 col-md-2" >BHIM UPI</div>
+    <div class="col-sm-4 col-md-2" >Cancelled</div>
+    <div class="col-sm-4 col-md-1" ><a href="../html/payment history invoice.html"><i class="fa fa-eye" style="color:black;margin-right: 2px;"></i></a><a href="#"><i class="fa fa-download" style="color:black;margin-left: 2px;"></i></a></div>
+ </div>
+ <div class="row payment-bg" style="text-align: center; margin-top: 5px;">
+    <div class="col-sm-4 col-md-1" scope="row" >8</div>
+    <div class="col-sm-4 col-md-2" >00268</div>
+    <div class="col-sm-4 col-md-2" >12-02-23</div>
+    <div class="col-sm-4 col-md-2" >150.00</div>
+    <div class="col-sm-4 col-md-2" >BHIM UPI</div>
+    <div class="col-sm-4 col-md-2" >Done</div>
+    <div class="col-sm-4 col-md-1" ><a href="../html/payment history invoice.html"><i class="fa fa-eye" style="color:black;margin-right: 2px;"></i></a><a href="#"><i class="fa fa-download" style="color:black;margin-left: 2px;"></i></a></div>
+ </div>
+ <div class="row payment-bg" style="text-align: center; margin-top: 5px;">
+    <div class="col-sm-4 col-md-1" scope="row" >9</div>
+    <div class="col-sm-4 col-md-2" >00269</div>
+    <div class="col-sm-4 col-md-2" >12-02-23</div>
+    <div class="col-sm-4 col-md-2" >150.00</div>
+    <div class="col-sm-4 col-md-2" >BHIM UPI</div>
+    <div class="col-sm-4 col-md-2" >Cancelled</div>
+    <div class="col-sm-4 col-md-1" ><a href="../html/payment history invoice.html"><i class="fa fa-eye" style="color:black;margin-right: 2px;"></i></a><a href="#"><i class="fa fa-download" style="color:black;margin-left: 2px;"></i></a></div>
+ </div>
+ <div class="row payment-bg" style="text-align: center; margin-top: 5px;">
+    <div class="col-sm-4 col-md-1" scope="row" >10</div>
+    <div class="col-sm-4 col-md-2" >00270</div>
+    <div class="col-sm-4 col-md-2" >12-02-23</div>
+    <div class="col-sm-4 col-md-2" >150.00</div>
+    <div class="col-sm-4 col-md-2" >BHIM UPI</div>
+    <div class="col-sm-4 col-md-2" >Done</div>
+    <div class="col-sm-4 col-md-1" ><a href="../html/payment history invoice.html"><i class="fa fa-eye" style="color:black;margin-right: 2px;"></i></a><a href="#"><i class="fa fa-download" style="color:black;margin-left: 2px;"></i></a></div>
+ </div>
+</div>
+</body>
+</html>

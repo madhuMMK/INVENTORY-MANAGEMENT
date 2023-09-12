@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/navbar.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500&family=Audiowide&family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a target="display-frame" href="../html/dashboard.html"><i class="fa fa-fw fa-home"></i> Dashboard</a>
+        <a target="display-frame" href="../html/subadmins.html"><i class="fa fa-fw fa-star"></i> Sub Admins</a>
+        <a target="display-frame" href="../html/shops.html"><i class="fa fa-fw fa-shopping-bag"></i> Shops</a>
+        <a target="display-frame" href="../html/customers.html"><i class="fa fa-fw fa-user"></i> Customers</a>
+        <button class="dropdown-btn"><i class="fa fa-fw fa-star"></i> Category<i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a target="display-frame" href="../html/maincat.html"><i class="fa fa-fw fa-circle" style="font-size:15px"></i> Main Category</a>
+          <a target="display-frame" href="../html/subcat.html"><i class="fa fa-fw fa-circle" style="font-size:15px"></i> Sub Category</a>
+        </div>        
+        <a target="display-frame" href="../html/order.html"><i class="fa fa-fw fa-cart-arrow-down"></i> Order Management</a>
+        <a target="display-frame" href="../html/khata.html"><i class="fa fa-fw fa-calculator"></i> Khata</a>
+        <a target="display-frame" href="../html/products.html"><i class="fa fa-fw fa-product-hunt"></i> Products</a>
+        <a target="display-frame" href="../html/coupons.html"><i class="fa fa-fw fa-vcard"></i> Coupons</a>
+        <a target="display-frame" href="../html/paymenthistory.html"><i class="fa fa-fw fa-dollar"></i> Payment History</a>
+        <a target="display-frame" href="../html/profile.html"><i class="fa fa-fw fa-wrench"></i> Settings</a>
+    </div>
+
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+    </script>
+    
+</body>
+</html> 

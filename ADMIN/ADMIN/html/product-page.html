@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/product-page.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Sans+KR:wght@100&family=Overpass:wght@100;700&family=Padauk&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@220;300;400;500&family=Audiowide&family=Oswald:wght@220;300;400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+      let menuicn = document.querySelector(".menuicn");
+      let nav = document.querySelector(".navcontainer");
+
+      menuicn.addEventListener("click",()=>
+      {
+          nav.classList.toggle("navclose");
+      })
+    </script>
+    
+</head>
+<body style="background-color: #FFF1F1;">
+    <div>
+        <h1 class="h" style="font-family: 'Archivo', sans-serif;font-style: Noto Sans Korean;">Products</h1>
+        <a href="Create P.html"><button class="tn" style="font-family: 'Archivo', sans-serif;font-style: Noto Sans Korean; box-shadow: 1px 1px 5px #785C6F;">Add Product</button></a>
+    </div>
+   <div style="text-align: right; margin-right: 10px;"><a href="viewall.html"><button style="text-decoration: underline; border: none; background-color: #FFFFFF; border-radius: 50px; box-shadow: 1px 1px 5px #785C6F;">view all</button></a></div><br>
+   <div class="box-container">
+      <div class="box box1">
+         <img src="../images/tshirt.png">
+      </div>
+
+      <div class="box box2">
+         <img src="../images/tshirt.png">				
+      </div>
+
+      <div class="box box3">
+         <img src="../images/tshirt.png">
+      </div>
+
+          <div class="box box4">
+         <img src="../images/tshirt.png">
+      </div>
+   </div>
+   <div class="row">
+      <div class="col"><p style="text-align: center;">TShirts</p></div>
+      <div class="col"><p style="text-align: center;">TShirts</p></div>
+      <div class="col"><p style="text-align: center;">TShirts</p></div>
+      <div class="col"><p style="text-align: center;">TShirts</p></div>       
+   </div>
+   
+   <div class='container-fluid mrt' style="margin-bottom: 10px;">
+
+      <div class="row" style="text-align: center;background-color:rgba(211, 198, 198, 1);  border-radius:200px; margin-left: 10px; margin-right:10px; padding-top:5px; padding-bottom:5px;">   
+         <div class="col-sm-4 col-md-2" >S.No</div>
+         <div class="col-sm-4 col-md-2" >Name</div>
+         <div class="col-sm-4 col-md-2" >Specs</div>
+         <div class="col-sm-4 col-md-2" >Features</div>
+         <div class="col-sm-4 col-md-2" >Status</div>
+         <div class="col-sm-4 col-md-2" >Edit</div>
+      </div>
+       <div class="row khata-bg" style="text-align: center;color:rgba(239, 53, 176, 1); font-weight:bold; margin-top: 5px; margin-left: 10px; margin-right:10px;">
+         <div class="col-sm-4 col-md-2" style="font-weight: bold; text-align:center; margin-top: 10px;">Search</div>
+         <div class="col-sm-4 col-md-2" ><form><input type="search" name="search" placeholder="Search.." style="text-align: center;"></form></div>
+         <div class="col-sm-4 col-md-2" ><form><input type="search" name="search" placeholder="Search.." style="text-align: center;"></form></div>
+         <div class="col-sm-4 col-md-2" ><form><input type="search" name="search" placeholder="Search.." style="text-align: center;"></form></div>
+         <div class="col-sm-4 col-md-2" ><form> <select name="Status" id="status" class="inp1 form form-control" style="border-radius: 40px; margin-left:30px; width: fit-content; height: 40px;">
+            <option value="none">select</option>
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+          </optgroup>
+        </select></form></div>
+         <div class="col-sm-4 col-md-2" ></div>
+       </div>
+       <div class="row khata-bg" style="text-align: center; margin-top: 5px; margin-left: 10px; margin-right:10px;">
+          <div class="col-sm-4 col-md-2" scope="row" >1</div>
+          <div class="col-sm-4 col-md-2" >Levis T-shirt</div>
+          <div class="col-sm-4 col-md-2" >Large</div>
+          <div class="col-sm-4 col-md-2" >Regular</div>
+          <div class="col-sm-4 col-md-2" >Active</div>
+          <div class="col-sm-4 col-md-2" ><a href="Edit P.html"><i class="fa fa-edit" style="color:black"></i></a></div>
+       </div>
+       <div class="row khata-bg" style="text-align: center; margin-top: 5px; margin-left: 10px; margin-right:10px;">
+          <div class="col-sm-4 col-md-2" scope="row" >2</div>
+          <div class="col-sm-4 col-md-2" >Levis T-shirt</div>
+          <div class="col-sm-4 col-md-2" >Large</div>
+          <div class="col-sm-4 col-md-2" >Regular</div>
+          <div class="col-sm-4 col-md-2" >Active</div>
+          <div class="col-sm-4 col-md-2" ><a href="Edit P.html"><i class="fa fa-edit" style="color:black"></i></a></div>
+       </div>
+       <div class="row khata-bg" style="text-align: center; margin-top: 5px; margin-left: 10px; margin-right:10px;">
+          <div class="col-sm-4 col-md-2" scope="row" >3</div>
+          <div class="col-sm-4 col-md-2" >Levis T-shirt</div>
+          <div class="col-sm-4 col-md-2" >Large</div>
+          <div class="col-sm-4 col-md-2" >Regular</div>
+          <div class="col-sm-4 col-md-2" >Active</div>
+          <div class="col-sm-4 col-md-2" ><a href="Edit P.html"><i class="fa fa-edit" style="color:black"></i></a></div>
+       </div>
+       <div class="row khata-bg" style="text-align: center; margin-top: 5px; margin-left: 10px; margin-right:10px;">
+          <div class="col-sm-4 col-md-2" scope="row" >4</div>
+          <div class="col-sm-4 col-md-2" >Levis T-shirt</div>
+          <div class="col-sm-4 col-md-2" >Large</div>
+          <div class="col-sm-4 col-md-2" >Regular</div>
+          <div class="col-sm-4 col-md-2" >Active</div>
+          <div class="col-sm-4 col-md-2" ><a href="Edit P.html"><i class="fa fa-edit" style="color:black"></i></a></div>
+       </div>
+       <div class="row khata-bg" style="text-align: center; margin-top: 5px; margin-left: 10px; margin-right:10px;">
+          <div class="col-sm-4 col-md-2" scope="row" >5</div>
+          <div class="col-sm-4 col-md-2" >Levis T-shirt</div>
+          <div class="col-sm-4 col-md-2" >Large</div>
+          <div class="col-sm-4 col-md-2" >Regular</div>
+          <div class="col-sm-4 col-md-2" >Active</div>
+          <div class="col-sm-4 col-md-2" ><a href="Edit P.html"><i class="fa fa-edit" style="color:black"></i></a></div>
+       </div>
+       <div class="row khata-bg" style="text-align: center; margin-top: 5px; margin-left: 10px; margin-right:10px;">
+          <div class="col-sm-4 col-md-2" scope="row" >6</div>
+          <div class="col-sm-4 col-md-2" >Levis T-shirt</div>
+          <div class="col-sm-4 col-md-2" >Large</div>
+          <div class="col-sm-4 col-md-2" >Regular</div>
+          <div class="col-sm-4 col-md-2" >Active</div>
+          <div class="col-sm-4 col-md-2" ><a href="Edit P.html"><i class="fa fa-edit" style="color:black"></i></a></div>
+       </div>
+       <div class="row khata-bg" style="text-align: center; margin-top: 5px; margin-left: 10px; margin-right:10px;">
+          <div class="col-sm-4 col-md-2" scope="row" >7</div>
+          <div class="col-sm-4 col-md-2" >Levis T-shirt</div>
+          <div class="col-sm-4 col-md-2" >Large</div>
+          <div class="col-sm-4 col-md-2" >Regular</div>
+          <div class="col-sm-4 col-md-2" >Active</div>
+          <div class="col-sm-4 col-md-2" ><a href="Edit P.html"><i class="fa fa-edit" style="color:black"></i></a></div>
+       </div>
+       <div class="row khata-bg" style="text-align: center; margin-top: 5px; margin-left: 10px; margin-right:10px;">
+          <div class="col-sm-4 col-md-2" scope="row" >8</div>
+          <div class="col-sm-4 col-md-2" >Levis T-shirt</div>
+          <div class="col-sm-4 col-md-2" >Large</div>
+          <div class="col-sm-4 col-md-2" >Regular</div>
+          <div class="col-sm-4 col-md-2" >Active</div>
+          <div class="col-sm-4 col-md-2" ><a href="Edit P.html"><i class="fa fa-edit" style="color:black"></i></a></div>
+       </div>
+       <div class="row khata-bg" style="text-align: center; margin-top: 5px; margin-left: 10px; margin-right:10px;">
+          <div class="col-sm-4 col-md-2" scope="row" >9</div>
+          <div class="col-sm-4 col-md-2" >Levis T-shirt</div>
+          <div class="col-sm-4 col-md-2" >Large</div>
+          <div class="col-sm-4 col-md-2" >Regular</div>
+          <div class="col-sm-4 col-md-2" >Active</div>
+          <div class="col-sm-4 col-md-2" ><a href="Edit P.html"><i class="fa fa-edit" style="color:black"></i></a></div>
+       </div>
+       <div class="row khata-bg" style="text-align: center; margin-top: 5px; margin-left: 10px; margin-right:10px;">
+          <div class="col-sm-4 col-md-2" scope="row" >10</div>
+          <div class="col-sm-4 col-md-2" >Levis T-shirt</div>
+          <div class="col-sm-4 col-md-2" >Large</div>
+          <div class="col-sm-4 col-md-2" >Regular</div>
+          <div class="col-sm-4 col-md-2" >Active</div>
+          <div class="col-sm-4 col-md-2" ><a href="Edit P.html"><i class="fa fa-edit" style="color:black"></i></a></div>
+       </div>
+   </div>   
+</body>
+</html>
